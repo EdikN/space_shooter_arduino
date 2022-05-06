@@ -388,7 +388,7 @@ namespace SimpleJSON
         {
             return new JSONString(s);
         }
-        public static implicit operator string(JSONNode d)
+        public static implicit operator string (JSONNode d)
         {
             return (d == null) ? null : d.Value;
         }
@@ -397,7 +397,7 @@ namespace SimpleJSON
         {
             return new JSONNumber(n);
         }
-        public static implicit operator double(JSONNode d)
+        public static implicit operator double (JSONNode d)
         {
             return (d == null) ? 0 : d.AsDouble;
         }
@@ -406,7 +406,7 @@ namespace SimpleJSON
         {
             return new JSONNumber(n);
         }
-        public static implicit operator float(JSONNode d)
+        public static implicit operator float (JSONNode d)
         {
             return (d == null) ? 0 : d.AsFloat;
         }
@@ -415,7 +415,7 @@ namespace SimpleJSON
         {
             return new JSONNumber(n);
         }
-        public static implicit operator int(JSONNode d)
+        public static implicit operator int (JSONNode d)
         {
             return (d == null) ? 0 : d.AsInt;
         }
@@ -424,7 +424,7 @@ namespace SimpleJSON
         {
             return new JSONBool(b);
         }
-        public static implicit operator bool(JSONNode d)
+        public static implicit operator bool (JSONNode d)
         {
             return (d == null) ? false : d.AsBool;
         }
